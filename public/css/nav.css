@@ -1,0 +1,38 @@
+#bgNavs{
+  background-image: url('./img/vHeader.jpg');
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 30px;
+  background-position: center;
+}
+#navsPanel{
+  display: flex;
+  justify-content: space-around;
+}
+.brandNav{
+  flex-basis: 25%;
+  text-align: end;
+  color: white;
+}
+#basic-navbar-nav{
+  flex-basis: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar-nav>a{
+  margin: 0 10px;
+}
+.navTextWithAppLinks{
+  margin: 100px 0 0 240px;
+  width: 420px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.buttonLinks>img{
+  width: 120px;
+  height: 35;
+  margin-right: 20px;
+}
