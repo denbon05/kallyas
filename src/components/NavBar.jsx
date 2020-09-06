@@ -7,13 +7,17 @@ import playMarketIcon from '../img/google-play-computer-icons.jpg';
 import appStore from '../img/app-store-icon-logo.png';
 
 export default class NavBar extends React.Component {
-
   render() {
-     
+    const iconStyle = {
+      width: 120 + 'px',
+      height: 35 + 'px',
+      marginRight: 20 + 'px',
+    }; 
+
     return (
       <div id="bgNavs">
-        <Navbar id="navsPanel">
-          <Navbar.Brand href="#" className="brandNav">
+        <Navbar id="navsPanel" fixed="top">
+          <Navbar.Brand href="#" className="brandNav" style={{color: 'white'}}>
             <img
               alt="logo"
               src={logo}
@@ -39,14 +43,14 @@ export default class NavBar extends React.Component {
             <h3>Social Media Presence</h3>
           </div>
           <div>
-            <p>
+            <p style={{fontSize: 13 + 'px'}}>
               One of the most used Social Media Management Platform wich have a offer
               with 25% DISCOUNT for all services in week-ends.
             </p>
           </div>
           <div className="buttonLinks">
-            <img src={playMarketIcon}></img>
-            <img src={appStore}></img>
+            <a href="#"><img style={iconStyle} src={playMarketIcon}></img></a>
+            <a href="#"><img style={iconStyle} src={appStore}></img></a>
           </div>
         </div>
       </div>
